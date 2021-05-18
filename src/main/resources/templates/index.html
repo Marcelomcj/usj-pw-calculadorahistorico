@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora com Historico</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
 </head>
 <body>
    
@@ -20,8 +21,8 @@
 
     <br></br><br></br>
 
-    <ul class="list-group">
-        <li class="list-group-item" th:each="item : ${historico}" th:text="${item}"></li>
+    <ul>
+        <li th:each="item : ${historico}" th:text="${item.descricao}"></li>
     </ul>
     
 </body>
